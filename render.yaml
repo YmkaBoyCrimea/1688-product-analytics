@@ -1,0 +1,6 @@
+services:
+  - type: worker
+    name: 1688-product-worker
+    runtime: python
+    buildCommand: "pip install -r requirements.txt && playwright install chromium"
+    startCommand: "bash start.sh"
